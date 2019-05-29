@@ -1,0 +1,474 @@
+html,body{
+    background-color: rgb(230, 224, 224);
+    height: 100%;
+    font-style: Helvetica;
+   
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+    width: 100%;
+    margin-top: 0;
+    height:50px;
+}
+
+header > .sign {
+   padding-top: 12px;
+    text-align: center;
+    padding-left: 5%;
+}
+
+header > .sign a{
+    text-decoration:none;
+    color: rgb(255, 0, 191);
+}
+
+header p {
+    color: rgb(76, 113, 148);
+}
+header > .flag {
+    display: flex;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    padding-right: 5%;
+}
+
+.container > div {
+    align-items: center;
+    font-size: 2em;
+    color: #f7faf6;
+}
+
+.container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 75px;
+    grid-auto-flow: dense;
+}
+
+.search{
+    grid-column: span 12;
+    background-color: rgb(17, 17, 17);
+    display: flex;
+justify-content: space-around;
+}
+
+.container > div.search > h2 {
+    color: rgb(189, 30, 96);
+}
+
+.container > div.search > p {
+    font-size: 20px;
+}
+.input > #search > img{
+    position: absolute;
+    width:20px;
+    height:20px;
+    margin-top: 15px;
+    margin-left:1%;
+}
+.input > #close > img{
+    position: absolute;
+    margin-left: 17%;
+    margin-top: 15px;
+}
+.input > input[type=text] {
+    border-radius: 1em;
+    background-color: rgb(100, 98, 98);
+    color: rgb(255, 255, 255);
+    height: 30px;
+    width: 250px;
+    text-align: center;
+
+}
+
+::placeholder {
+    color: rgb(247, 245, 245);
+    opacity: 1;
+  }
+
+
+  .men{
+    grid-column: span 12;
+    grid-row: span 5;
+    background-image: url('https://res.cloudinary.com/dcwpgksxc/image/upload/v1558278845/Images-modal4.png');  
+    margin-top:2%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 4%;
+    margin-right: 4%;
+
+  }
+  table{
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 15px;
+    padding: 10px;
+    margin-left: 10%;
+   }
+th{
+    text-align: start;
+}
+  td{
+    text-align:start;
+   
+    font-size: 24px;
+ }
+
+.container > .filter{
+    display: flex;
+    justify-content: center;
+    grid-column: span 3;
+    /* grid-row: span 5; */
+    margin-top:10%;
+    margin-left:21%;
+    background-color: white;
+    color:black;
+    text-align: start;
+    font-weight:bold;
+    font-size:24px;
+}
+
+.container > .shirt {
+    grid-column: span 3;
+    grid-row: span 5;
+    background-color: white;
+    margin-right:18%;
+    margin-left: 10%;
+    margin-top:10%;
+    align-content: center;
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container > .shirt > img{
+    width:200px;
+    height:200px;
+  
+}
+
+button{
+    background-color: rgb(124, 16, 34);
+    border-radius: 1em;
+    border: 1px solid white;
+    height:30px;
+    color:white;
+    font-weight: bold;
+}
+
+.price{
+    color: rgb(124, 16, 34);
+}
+
+.container > .size {
+    grid-column: span 3;
+    grid-row: span 5;
+    display: flex;
+    flex-direction: column;
+    text-align:start;
+    background-color: white;
+    margin-left: 20%;
+    color: rgb(133, 124, 124);
+}
+
+.blue{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(24, 24, 102);
+    border-radius: 1em;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.green{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(29, 167, 87);
+    border-radius: 1em; 
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.yellow{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(165, 179, 46);
+    border-radius: 1em;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.orange{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(190, 95, 16);
+    border-radius: 1em;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.purple{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(155, 14, 168);
+    border-radius: 1em;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.light{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(130, 180, 189);
+    border-radius: 1em;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.pink{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(117, 54, 91);
+    border-radius: 1em;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.container > .size > p {
+    margin-right:70%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.color{
+    display: flex;
+    margin-left: 12%
+}
+
+.medium{
+    border: 1px solid white;
+    background-color: rgb(117, 116, 114);
+    color: black;
+    height: 25px;
+    width:35px;
+    text-align: center;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-bottom: 10px
+   
+}
+.large{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 40px;
+}
+
+.container > .size > .cir{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    margin-right: 100px;
+}
+
+.container > .size > .cir p {
+    margin-right:70%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container >.apply{
+    display: flex;
+    grid-column: span 3;
+    margin-left: 70px;
+    background-color: white;
+    color:rgb(231, 15, 105);
+}
+
+.container > .apply > img {
+    
+    height:24px ;
+    width: 24px;
+}
+
+.container > .apply > button{
+    height: 35px;
+    width:70px;
+    margin-left: 30px;
+}
+
+.container > .pagination {
+    display: flex;
+    position: absolute;
+    right: 0;
+    grid-column: span 3;
+    background-color: rgb(230, 224, 224);
+    text-align: center;
+    color: black;
+    margin-top:1300px;
+    margin-right:5%;
+    font-size:20px;
+
+}
+
+.pagination > input[type=number]{
+ width:40px;
+    height:20px;
+    color: black;
+    background-color: white;
+    margin-left: 6px;
+    margin-right: 6px;
+    font-size:20px;
+}
+
+.pagination >::placeholder{
+    color: rgb(8, 8, 8);
+}
+
+.container > .pagination > .pointer{
+    border-radius: 1em;
+    height:25px;
+    width:25px;
+    background-color: rgb(138, 133, 133);
+    margin-left: 6px;
+    margin-right: 6px;
+
+}
+
+h1{
+    margin-top:70px;
+}
+
+.con{
+    
+    display: grid;
+    margin-top:10px;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 75px;
+    grid-auto-flow: dense;
+}
+
+.con > .polo{
+    grid-column: span 4;
+    grid-row: span 6;
+    background-color: white;
+    margin: 20%;
+    margin-top:10%;
+    margin-bottom: 5%;
+    align-content: center;
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.con > .polo > img {
+    width:200px;
+    height:200px; 
+}
+
+.con > .shoe {
+    grid-column: span 12;
+    grid-row: span 6;
+    color:white;
+    background-image: url(https://res.cloudinary.com/dcwpgksxc/image/upload/v1558560253/images-shoe2.png);
+    margin-top:1%;
+    margin-left: 2%;
+    margin-right:2%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    align-content: center;
+    font-size: 30px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.con > .shoe p {
+    color: black;
+    margin-top: 40px;
+   
+}
+
+.con > .shoe > button{
+    background-color: white;
+    margin-top: 20px;
+    color: red;
+    height: 40px;
+    width: 150px;
+}
+
+.con > .subscribe{
+    grid-column: span 12;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-weight: bold;
+   
+}
+
+.con > .subscribe > input[type=text]{
+   
+border-radius: 1em;
+height: 40px;
+width: 250px;
+text-align: center;
+font-weight: bold;
+}
+
+.subscribe > ::placeholder{
+    color: rgb(80, 78, 78);
+}
+
+.con > .subscribe > img{
+    position: absolute;
+    left: 71%;
+    top:2435px;
+}
+
+ .subscribe > button{
+
+    position: absolute;
+    left:90%;
+}
+
+footer{
+    grid-column: span 12;
+    grid-row: span 4;
+    background-color: rgb(29, 29, 31);
+    color: white;
+    text-align: center;
+}
+ 
+footer h1 >span {
+    padding: 2%;
+}
+
+footer >.online > img{
+    padding: 1%;
+}
+
+
+
+
+
+
+
